@@ -1,0 +1,80 @@
+body {
+  background-color: #131529;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-table-container {
+  background-color: grey;
+  margin: 30px 150px 30px 150px;
+  border-radius: 20px;
+}
+
+.list-title {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  color: rgb(165, 198, 243);
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Arial;
+}
+
+.list-table {
+  color: white;
+  font-size: 30px;
+  padding: 40px 50px;
+}
+
+.list-table-item {
+  margin-top: 20px;
+}
+
+.list-table-item:nth-child(even) {
+  background-color: #131529;
+}
+
+th {
+  color: rgb(165, 198, 243);
+  padding: 20px 20px 20px 20px;
+  justify-content: space-evenly;
+  font-weight: 600;
+  text-align: left;
+  width: 500px;
+}
+
+td {
+  text-align: left;
+  width: 300px;
+  padding: 20px 20px 20px 20px;
+}
+
+tr {
+  padding-top: 30px;
+}
+
+td:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
+td:last-child {
+  border-radius: 0 20px 20px 0;
+}
+
+.eye_icon {
+  cursor: pointer;
+  width: 40px;
+  justify-content: flex-end;
+  color: white;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40vh;
+  width: 100%;
+}

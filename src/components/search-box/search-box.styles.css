@@ -1,0 +1,30 @@
+.search-box-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 150px;
+  }
+  
+  .searchIcon {
+    color: rgb(165, 198, 243);
+    padding-right: 10px;
+  }
+  
+  .search-box {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    height: 60px;
+    font-size: 35px;
+    background: none;
+    color: rgb(165, 198, 243);
+    border: none;
+    border-bottom: 1px solid;
+  }
+  .search-box:focus {
+    outline: none;
+  }
+  .search-box::placeholder {
+    color: rgb(165, 198, 243);
+    font: 35px sans-serif;
+  }
