@@ -9,7 +9,7 @@ import Spinner from "../spinner/spinner";
 function ListContainer() {
   const [characters, setCharacters] = React.useState();
   const [query, setQuery] = React.useState(null);
-  const [status, setStatus] = React.useState("resolved");
+  const [status, setStatus] = React.useState("loading");
 
   const isLoading = status === "loading";
   const isResolved = status === "resolved";
@@ -24,7 +24,6 @@ function ListContainer() {
   React.useEffect(() => {
     async function getCharacters() {
       const arrayOfCharacters = [];
-      setStatus('loading')
       await axios
         .get("https://rickandmortyapi.com/api/character", {
           params: { name: query },
